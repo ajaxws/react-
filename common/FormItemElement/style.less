@@ -1,0 +1,93 @@
+@import '../../../style/var';
+
+.form-item-element {
+    .ant-select {
+        width: 100%;
+    }
+
+    &-disabled {
+        .anticon-cross, .anticon-delete {
+            display: none !important;
+        }
+    }
+
+    textarea {
+        height: 88px;
+        resize: none;
+    }
+
+    .comp-input-number {
+        display: flex;
+        // width: 100%;
+
+        .ant-input-number {
+            position: relative;
+            z-index: 50;
+            display: inline-block;
+            // flex: 1;
+            // margin-left: -365px;
+            width: 300px;
+        }
+        
+        .ant-input-group-addon {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            // flex: 0 0 63px !important;
+            // width: 63px !important;
+            height: 32px;
+        }
+    }
+    .bf-container.disabled {
+        pointer-events: inherit;
+        cursor: not-allowed;
+        > * {
+            pointer-events: none;
+        }
+       .bf-content {
+            background-color: #f5f5f5;
+       }
+    }
+
+    .ql-container.ql-snow {
+        border-radius: 2px;
+        border-color: #ececec;
+        font-size: 14px;
+        tab-size: unset;
+        .ql-editor {
+            line-height: 22px;
+            &.ql-blank::before {
+                font-family: @font-family;
+                font-style: normal;
+                margin-left: -2px;
+                color: rgba(0, 0, 0, 0.25);
+                font-weight: 600;
+            }
+            p {
+                margin-bottom: 8px;
+            }
+        }
+        a {
+            color: @primary-color;
+        }
+    }
+    .ant-upload-list-item {
+        a.ant-upload-list-item-thumbnail, a.ant-upload-list-item-name {
+            pointer-events: none;
+        }
+    }
+}
+.has-error {
+    .ql-container.ql-snow {
+        border-color: @primary-danger;
+    }
+}
+
+.picture-card-style() {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 2px;
+    width: 120px;
+    height: 120px;
+}

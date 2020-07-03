@@ -1,0 +1,47 @@
+.eye-button {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    .eye-normal, .eye-hover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: .3s;
+    }
+    .eye-normal {
+        background-image: url('./eye_normal.png');
+        opacity: 1;
+    }
+    .eye-hover {
+        background-image: url('./eye_hover.png');
+        opacity: 0;
+    }
+    &:hover:not(.disabled) {
+        .eye-hover {
+            opacity: 1;
+        }
+        .eye-normal {
+            opacity: 0;
+        }
+    }
+    &.disabled {
+        opacity: 0.5;;
+        cursor: not-allowed;
+    }
+}
+
+.preload {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    &.preload-normal {
+        background-image: url('./eye_normal.png');
+    }
+    &.preload-normal {
+        background-image: url('./eye_hover.png');
+    }
+}

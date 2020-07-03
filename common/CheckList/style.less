@@ -1,0 +1,39 @@
+.comp-repair-list {
+    display: flex;
+    align-items: center;
+    height: 20px;
+
+    .tick-icon {
+        display: inline-flex;
+        position: relative;
+        margin-right: 4px;
+        width: 16px;
+        height: 16px;
+        font-size: 18px;
+
+        &:before {
+            content: '☑';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            font-size: 20px;
+            line-height: 20px;
+            opacity: 0;
+        }
+
+        &.is-shown {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    .item-icon {
+        display: inline-block;
+        margin-right: 8px;
+        width: 14px;
+        height: 14px;
+        background-size: cover;
+    }
+}

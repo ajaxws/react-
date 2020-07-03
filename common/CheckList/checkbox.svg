@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Checkbox/selected/dis</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Checkbox/selected/dis" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-21-Copy">
+            <rect id="Rectangle-271-Copy-2" stroke="#000000" x="0.5" y="0.5" width="15" height="15" rx="2"></rect>
+            <g id="Group-Copy" transform="translate(2.000000, 2.000000)">
+                <rect id="Rectangle" x="0" y="0" width="12" height="12"></rect>
+                <path d="M3.9723856,9.04723851 L10.275496,2.04692521 C10.4833682,1.81605972 10.8390354,1.79741999 11.0699009,2.00529222 C11.3007664,2.21316445 11.3194062,2.56883165 11.1115339,2.79969715 L4.40302497,10.2502512 C4.32536198,10.3365046 4.2270692,10.3931348 4.1223625,10.4193967 C3.92155792,10.47787 3.69597571,10.4215403 3.54665512,10.255703 L0.896798936,7.31273958 C0.688926707,7.08187408 0.707566435,6.72620688 0.938431934,6.51833465 C1.16929743,6.31046242 1.52496464,6.32910215 1.73283686,6.55996765 L3.9723856,9.04723851 Z" id="Combined-Shape" fill-opacity="0.8" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

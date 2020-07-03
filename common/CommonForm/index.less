@@ -1,0 +1,90 @@
+@ant-form-control-width-col-1: 300px;
+@ant-form-control-width-col-2: 640px;
+@ant-form-control-width-col-3: 980px;
+@query-max-width-col-3: 1020px;
+@query-max-width-col-2: 680px;
+@primary-light: #54636F;
+
+.query {
+    position: relative;
+    .form-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .ant-form-item{
+        display: inline-block;
+        padding-bottom: 0;
+        margin-top: 16px;
+        margin-bottom: 0;
+        margin-right: 39px;
+        .ant-form-item-label {
+            label {
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        .ant-select {
+            font: inherit;
+        }
+        .ant-calendar-picker-input {
+            font: inherit;
+        }
+    }
+    .ant-form-item.col-1{
+        width: @ant-form-control-width-col-1;
+        .ant-select {
+            width: @ant-form-control-width-col-1;
+        }
+        .ant-calendar-picker-input {
+            width: @ant-form-control-width-col-1;
+        }
+    }
+    .ant-form-item.col-2{
+        width: @ant-form-control-width-col-2;
+        .ant-select {
+            width: @ant-form-control-width-col-2;
+        }
+        .ant-calendar-picker-input {
+            width: @ant-form-control-width-col-2;
+        }
+    }
+    .button-group {
+        overflow: initial;
+        white-space: nowrap;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        margin-right: 40px;
+        .button-group-flex {
+            display: flex;
+        }
+        button {
+            margin-right: 24px;
+            &[attr-type="search"] {
+                order: 99;
+                margin-right: 0;
+            }
+            &[attr-type="reset"] {
+                margin-right: 24px;
+            }
+        }
+    }
+    &.col3 {
+        width: @query-max-width-col-3;
+        .ant-form-item.col-3{
+            width: @ant-form-control-width-col-3;
+            .ant-select {
+                width: @ant-form-control-width-col-3;
+            }
+            .ant-calendar-picker-input {
+                width: @ant-form-control-width-col-3;
+            }
+        }
+    }
+    &.col2 {
+        width: @query-max-width-col-2;
+    }
+}

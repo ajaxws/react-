@@ -1,0 +1,25 @@
+.expandBar {
+    border-top: 1px dashed #E4E6ED;
+    color: #000;
+    #btn {
+        display: none;
+    }
+    .labelbtn {
+        display: block;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .expandContent {
+        overflow: hidden;
+    }
+    .element {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-out 0s;
+    }
+    :checked~.element {
+        max-height: 2000px;
+    }
+}
